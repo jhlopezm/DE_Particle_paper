@@ -1,0 +1,20 @@
+name: Verify published data
+on:
+  push:
+  pull_request:
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install minimal scientific environment
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt pytest
+      - name: Check all raw data and predictions
+        run: python scripts/verify_dataset.py
+      - name: Check core numerical example
+        run: python -m pytest -q tests

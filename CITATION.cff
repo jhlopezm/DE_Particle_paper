@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite the associated manuscript once its bibliographic details are available."
+title: "Data and code for mapping underconstrained BSM parameter spaces with Differential Evolution"
+type: software
+authors:
+  - family-names: Giraldo
+    given-names: Yithsbey
+  - family-names: Lopez
+    given-names: Jorge
+  - family-names: Rojas
+    given-names: Eduardo
+keywords:
+  - Differential Evolution
+  - inverse reconstruction
+  - 2HDM+S
+  - Higgs phenomenology
+  - scalar potential
