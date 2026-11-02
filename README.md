@@ -37,12 +37,12 @@ The forward model uses `v = 246.22 GeV`, with CP-even eigenvectors as **columns*
 Create a notebook at [colab.research.google.com](https://colab.research.google.com), and clone this repository using a cell:
 
 ```python
-!git clone https://github.com/<OWNER>/DE_Particle_paper.git
+!git clone https://github.com/jhlopezm/DE_Particle_paper.git
 %cd DE_Particle_paper
 !pip install -r requirements.txt
 ```
 
-Then open an individual notebook from GitHub in Colab (File → Open notebook → GitHub) and ensure that the working directory points to the cloned project root. The public notebooks deliberately **do not download unknown files at runtime** or contain API credentials. Replace `<OWNER>` once the repo URL is known. Colab's runtime Python version may differ from the pinned production version; the notebooks reproduce the *saved-data analysis*, not bit-for-bit DE reruns.
+Then open an individual notebook from GitHub in Colab (File → Open notebook → GitHub) and ensure that the working directory points to the cloned project root. The public notebooks deliberately **do not download unknown files at runtime** or contain API credentials. Colab's runtime Python version may differ from the pinned production version; the notebooks reproduce the *saved-data analysis*, not bit-for-bit DE reruns.
 
 ## Notebook guide
 
@@ -68,6 +68,20 @@ Saved small outputs make the notebooks legible on GitHub without execution; all 
 
 `python scripts/verify_dataset.py` recomputes every mass, charged scalar and κ from saved parameter vectors, compares against their recorded values, and asserts exact final counts.
 
-## Citing and releasing
+## Licensing and attribution
 
-This is a **prepublication research dataset**, prepared for coauthor review. The repository contains a provisional [`CITATION.cff`](CITATION.cff), but no article DOI is claimed. Add a persistent Science Data Bank or Zenodo DOI and final publication metadata once they exist. Authors should explicitly approve code/data licensing before publishing; see [`LICENSE_NOTICE.md`](LICENSE_NOTICE.md).
+This project uses **different licenses for source code and research data**:
+
+- **Source code and notebooks:** [MIT License](LICENSE). The copyright notice in the MIT license must be preserved when reusing substantial portions of the software.
+- **Data files under `data/` (including raw runs, targets, processed selections, and metadata):** [Creative Commons Attribution 4.0 International (CC BY 4.0)](data/LICENSE). Users may share and adapt these datasets, including commercially, with appropriate credit, a link to the license, and an indication of changes.
+- **Other materials (e.g. manuscript text and independent third-party content):** these two permissions are not intended to grant rights beyond the materials identified above. For the repository figures, see [LICENSE_NOTICE.md](LICENSE_NOTICE.md).
+
+Suggested attribution for reuse of the data:
+
+> Giraldo, Y., Lopez, J., and Rojas, E. (2026). *Data and code for mapping underconstrained BSM parameter spaces with Differential Evolution*. GitHub repository: https://github.com/jhlopezm/DE_Particle_paper. Dataset licensed under CC BY 4.0.
+
+Please also cite the associated paper once its publication details are available. See [CITATION.cff](CITATION.cff).
+
+## Citing and archiving
+
+This is a **public prepublication research dataset**. The `CITATION.cff` metadata is provisional, and no DOI is claimed at this stage. After the authors verify the scientific release, tag a version and archive that exact release through Science Data Bank or Zenodo. The rights and attribution map is explained in [LICENSE_NOTICE.md](LICENSE_NOTICE.md).
