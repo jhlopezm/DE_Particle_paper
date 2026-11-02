@@ -1,0 +1,19 @@
+# Data license — Creative Commons Attribution 4.0 International
+
+The original research datasets distributed in this directory (`data/`), including `raw/` and `processed/`, are licensed under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.
+
+**License:** https://creativecommons.org/licenses/by/4.0/
+
+**Full legal terms:** https://creativecommons.org/licenses/by/4.0/legalcode
+
+**Dataset title:** *Data and code for mapping underconstrained BSM parameter spaces with Differential Evolution*.
+
+**Research authors for attribution:** Yithsbey Giraldo, Jorge Lopez, Eduardo Rojas (2026).
+
+**Source:** https://github.com/jhlopezm/DE_Particle_paper
+
+When sharing or adapting these data, give appropriate credit, link to the CC BY 4.0 license, identify the source, and indicate whether you changed the material. The license permits both noncommercial and commercial reuse when its conditions are met.
+
+The datasets were produced for an inverse-reconstruction study of a cubic 2HDM plus a complex singlet. The acceptance cuts, experimental-motivation context, and numerical limitations are documented in the repository. **The license does not imply experimental validation or endorsement of downstream scientific conclusions.**
+
+This data-specific license overrides the root software-license notice for the datasets contained under `data/`. Software is separately licensed under MIT; see [../LICENSE](../LICENSE) and [../LICENSE_NOTICE.md](../LICENSE_NOTICE.md).
