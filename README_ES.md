@@ -19,4 +19,10 @@ Abre `notebooks/00_start_here.ipynb` y ejecuta sus celdas. Los seis notebooks es
 
 Para una reproducción exhaustiva del entorno original, consulta `data/raw/production_environment_full.txt` (inventario completo del equipo Windows, convertido a UTF-8 para visualizarlo en GitHub, **no** lista mínima recomendada para instalar). La versión recomendada de dependencias es `requirements.txt`.
 
-**Publicación:** antes de habilitar visibilidad pública, los tres autores deben aprobar los datos, la licencia y las citas; véase `docs/publication_checklist.md`. El conector de GitHub vinculado permite que más adelante subamos los archivos cuando exista el repositorio `DE_Particle_paper`.
+## Licencias y atribución
+
+- **Código Python y notebooks:** licencia [MIT](LICENSE), conservando el aviso de copyright correspondiente.
+- **Datos de `data/` (originales y procesados):** licencia [Creative Commons Atribución 4.0 Internacional (CC BY 4.0)](data/LICENSE). Se permite reutilizar y adaptar los datos, incluso comercialmente, reconociendo la autoría, enlazando la licencia e indicando las modificaciones.
+- **Citación recomendada:** Yithsbey Giraldo, Jorge Lopez y Eduardo Rojas, *Data and code for mapping underconstrained BSM parameter spaces with Differential Evolution* (2026), https://github.com/jhlopezm/DE_Particle_paper.
+
+El repositorio **ya está publicado** en https://github.com/jhlopezm/DE_Particle_paper. Antes de asignar un DOI, conviene confirmar con los tres autores la atribución y los permisos de los materiales; consulta `docs/publication_checklist.md`.
