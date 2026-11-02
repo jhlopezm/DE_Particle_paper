@@ -1,20 +1,19 @@
-# Publish this project on GitHub
+# Publishing and archiving DE_Particle_paper
 
-1. In the GitHub account where this project will live, create a **new empty public repository** named `DE_Particle_paper` (do not initialize it with a README, .gitignore or license: the prepared bundle already has README and .gitignore). Confirm all coauthors agree to sharing the 3000 generated runs and notebooks.
-2. Extract `DE_Particle_paper_public.zip` and **open a terminal inside the `DE_Particle_paper_public` folder** (with `README.md` and `notebooks/` at top level).
-3. Run the following after checking the connected GitHub account and replacing `<GITHUB-OWNER>` with its login:
+The GitHub repository is already public at **https://github.com/jhlopezm/DE_Particle_paper**. The `main` branch contains the six Jupyter notebooks, the archived 3000-run dataset and analysis code; no new repository needs to be created.
 
-   ```bash
-   git init
-   git add .
-   git commit -m "Release reproducible 2HDM+S DE reconstruction analysis"
-   git branch -M main
-   git remote add origin https://github.com/<GITHUB-OWNER>/DE_Particle_paper.git
-   git push -u origin main
-   ```
+## Licenses
 
-   Git needs an authenticated session for the push. In VS Code you can instead use **Source Control → Publish to GitHub** and choose **Public**; make sure the owner and repository name match.
-4. Check the GitHub Actions workflow `Verify published data`. It must be green before publishing a DOI or announcing the release.
-5. Approve explicit code/data licenses and a final `CITATION.cff` entry, then tag a release and archive the exact tag (e.g. on ScienceDB or Zenodo).
+- Code and notebooks: [MIT](../LICENSE).
+- Raw and processed datasets: [CC BY 4.0](../data/LICENSE).
+- See [../LICENSE_NOTICE.md](../LICENSE_NOTICE.md) for exact scopes and recommended attribution.
 
-**Alternative:** upload the project files through the GitHub web interface or a GitHub desktop client. Generating this ZIP does not itself create a GitHub repository.
+## Next publication steps
+
+1. Confirm that all three research authors are comfortable with the public release and proposed attribution and have authority to release their contributions.
+2. Keep `python scripts/verify_dataset.py` and GitHub Actions green, and verify the paper's reported 5×1σ counts against the release files.
+3. Update `CITATION.cff` with the final manuscript and persistent dataset DOI when available.
+4. Create an immutable GitHub release tag such as `v1.0.0` after coauthor approval; archive that **specific tag** (not an evolving branch) in Science Data Bank or Zenodo.
+5. Insert the resulting DOI into the paper's data-and-software availability statement.
+
+For later updates from VS Code, use a normal incremental Git commit and `git push origin main`; never force-push over the published history.
