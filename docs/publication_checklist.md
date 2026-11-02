@@ -1,7 +1,8 @@
 # Publication checklist (for the three authors)
 
 - [ ] Confirm the public release of all 3000 generated rows and targets.
-- [ ] Agree on code and data licenses; add actual LICENSE files before release.
+- [x] Specify MIT for software and CC BY 4.0 for datasets; publish license notices.
+- [ ] Confirm coauthor consent, rights to contributed materials and attribution wording before formal DOI release.
 - [ ] Approve authorship, final manuscript title, and preferred citation.
 - [ ] Verify public visibility does not disclose internal paths, secrets, unpublished reviewer comments or personal files.
 - [ ] Link a DOI or permanent archive (e.g. Science Data Bank) once the deposit is published.
